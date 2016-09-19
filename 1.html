@@ -1,0 +1,37 @@
+<html>
+<body>
+
+<script type="text/javascript">
+
+var test='dsa';
+try{
+console.log('$'+test.valueOf());}
+catch(err){
+ console.log(err.message);
+}
+var x
+var mycars = [1,2,3,4,5,6,7,6,5,4,3,2,1]
+var mycars2 = [7,6,5,4,3,2,1,2,3,4,5,6,7]
+
+try{
+
+for (x in mycars)
+{
+for(i=0;i<mycars2[x];i++){
+document.write('&nbsp;');
+}
+document.write('*');
+for(i=2;i<mycars[x]*2;i++){
+document.write('&nbsp;');
+}
+document.write('*<br>');
+}
+
+}
+catch(err){
+ console.log(err.message);
+}
+</script>
+
+</body>
+</html>
